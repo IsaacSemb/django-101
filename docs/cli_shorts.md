@@ -3,7 +3,7 @@
 ### mkdir -p parent/child/grandchild
     - creating a nested folders 
     - p stands for parents, it enables creating parents too
-    - if no p, cant create non existent folders
+    - if no p, cant create children in non-existent folders
 
 ### mkdir parent/child
     this will throw ERROR parent doesnt exist
