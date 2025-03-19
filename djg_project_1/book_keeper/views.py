@@ -14,4 +14,7 @@ def welcome(request):
 # returning an template with some logic
 def welcome(request):
     name = 'Isaac Ssembuusi'
-    return (render(request, 'welcome.html',{'names':name}))
+    for i in range(5):
+        print(i)
+    
+    return (render(request, 'welcome.html',{'name':name}))
