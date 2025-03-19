@@ -1,1 +1,8 @@
 .venv
+
+# books related files (too large got github)
+books_dirty.csv
+books_cleaning_script.ipynb
+books_clean.csv
+
+resources
