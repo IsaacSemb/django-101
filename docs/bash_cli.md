@@ -1,7 +1,4 @@
-# CLI COMMANDS I ENCOUTERED
-
-
-# BASH COMMANDS
+# BASH CLI COMMANDS I ENCOUTERED
 
 ### mkdir -p parent/child/grandchild
     - creating a nested folders 
@@ -15,4 +12,4 @@
 ### mkdir folder && touch folder/file
     to create a file inside folder in one command
 
-DJANGO COMMANDS
+

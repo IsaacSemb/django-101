@@ -1,18 +1,15 @@
-# CLI COMMANDS I ENCOUTERED
+# DJANGO CLI COMMANDS I ENCOUTERED
 
+## django-admin 
+    showing the available options
 
-# BASH COMMANDS
+## django-admin startproject <projectname>
+    to start a new django project
 
-### mkdir -p parent/child/grandchild
-    - creating a nested folders 
-    - p stands for parents, it enables creating parents too
-    - if no p, cant create children in non-existent folders
+#### On new project - switch to using the manager file( manage.py )
 
-### mkdir parent/child
-    this will throw ERROR parent doesnt exist
+## python manage.py
+    does the same thing as django-admin to display options
 
-
-### mkdir folder && touch folder/file
-    to create a file inside folder in one command
-
-DJANGO COMMANDS
+## python manage.py runserver
+    this starts the development server

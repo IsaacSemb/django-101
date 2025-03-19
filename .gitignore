@@ -6,3 +6,8 @@ books_cleaning_script.ipynb
 books_clean.csv
 
 resources
+
+db.sqlite3
+
+__pycache__
+.vscode
