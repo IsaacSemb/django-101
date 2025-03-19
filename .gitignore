@@ -11,3 +11,4 @@ db.sqlite3
 
 __pycache__
 .vscode
+helper_clipboard.txt

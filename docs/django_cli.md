@@ -12,4 +12,4 @@
     does the same thing as django-admin to display options
 
 ## python manage.py runserver
-    this starts the development server
+    this starts the development server 
