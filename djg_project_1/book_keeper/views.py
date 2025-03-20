@@ -114,11 +114,7 @@ def get_books(request):
             'aggregation3': Book.objects.aggregate(Max('year_of_publication')),
             'aggregation4': Book.objects.aggregate(Avg('year_of_publication'))
             
-            
-            
-            
-            
-            
+
             }
     
     return (render(request, 'show_books.html', context))
