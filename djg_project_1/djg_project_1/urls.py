@@ -18,6 +18,11 @@ from django.contrib import admin
 import debug_toolbar
 from django.urls import path, include
 
+
+admin.site.site_header = "Book Keeper Admin"
+admin.site.index_title = "The Librarian"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', include('book_keeper.urls')),
