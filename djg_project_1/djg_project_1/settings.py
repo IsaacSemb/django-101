@@ -82,8 +82,15 @@ WSGI_APPLICATION = 'djg_project_1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        
+        # details for my database
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'book_keeper',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': '1234',        
     }
 }
 
