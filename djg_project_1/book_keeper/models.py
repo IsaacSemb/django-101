@@ -11,3 +11,9 @@ class Book(models.Model):
     image_url_sm = models.URLField(max_length=200)
     image_url_md = models.URLField(max_length=200) 
     image_url_lg = models.URLField(max_length=200)
+    
+    # class Meta:
+    #     db_table = 'books'
+    #     indexes = [
+    #         models.Index( fields=['ISBN'] )
+    #         ]
