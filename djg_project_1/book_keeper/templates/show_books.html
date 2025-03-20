@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+  </head>
+  <body>
+
+    {% if True %}
+
+    <h1>book queries</h1>
+
+    <h2>available options</h2>
+    <ul>
+      <li>all_books</li>
+      <li>sliced_books</li>
+      <li>counter: {{counter}}</li>
+      <li></li>
+    </ul>
+
+    {% endif %}
+
+    {% if False %}
+
+    <ul>
+      <h1>Book Count (displaying all books) : {{all_books|length}}</h1>
+
+      {% for book in all_books %}
+      <li>{{book.title | title }}</li>
+      {% endfor %}
+    </ul>
+
+    {% endif %}
+
+
+    {% if False %}
+
+    <h1>get by id (50)</h1>
+    <p>object: {{get_by_id}}</p>
+    <p>{{get_by_id.title}}</p>
+
+    <h1>book_getter by id</h1>
+    <p>object: {{book_getter}}</p>
+    <p>{{hello}}</p>
+    {% endif %}
+
+    {% comment %} filtering books {% endcomment %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count (beyond 2003): {{book_filter1|length}}</h1>
+  
+        {% for book in book_filter1 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( between 1994 and 98 ) : {{book_filter2|length}}</h1>
+  
+        {% for book in book_filter2 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( below 1993 ) : {{book_filter3|length}}</h1>
+  
+        {% for book in book_filter3 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( contains 'romance' ) : {{book_filter4|length}}</h1>
+  
+        {% for book in book_filter4 %}
+        <li>{{book.title | title }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( (case insensitive ) starts with 'man' ) : {{book_filter5|length}}</h1>
+  
+        {% for book in book_filter5 %}
+        <li>{{book.title | title }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( (case insensitive ) ends with 'man' ) : {{book_filter6|length}}</h1>
+  
+        {% for book in book_filter6 %}
+        <li>{{book.title | title }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( starts with a and above 1996 ) : {{book_filter7|length}}</h1>
+  
+        {% for book in book_filter7 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( starts with v OR above 2002 ) : {{book_filter8|length}}</h1>
+  
+        {% for book in book_filter8 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( sorted by alpha ) : {{book_filter9|length}}</h1>
+  
+        {% for book in book_filter9 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if False %}
+    <ul>
+        <h1>Book Count ( limiting results ) : {{limiting_results1|length}}</h1>
+  
+        {% for book in limiting_results1 %}
+        <li>{{book.title | title }} {{book.year_of_publication}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if True %}
+    <ul>
+        <h1>Book Count ( chosen fields ) : {{chosen_fields1|length}}</h1>
+  
+        {% for book in chosen_fields1 %}
+        <li>{{book}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if True %}
+    <ul>
+        <h1>Book Count ( chosen fields tuples ) : {{chosen_fields2|length}}</h1>
+  
+        {% for book in chosen_fields2 %}
+        <li>{{book}}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %}
+
+    {% if True %}
+    <ul>
+        <h1>Aggregations</h1>
+  
+        <li>{{aggregation1}}</li>
+        <li>{{aggregation2}}</li>
+        <li>{{aggregation3}}</li>
+        <li>{{aggregation4}}</li>
+
+      </ul>
+    {% endif %}
+
+  </body>
+</html>
